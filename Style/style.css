@@ -101,16 +101,16 @@ h4 {
   width: 65%;
   font-family: "Roboto", sans-serif;
 }
-@media (max-width: 992px) {
-  .home p {
-    margin: 30px 0;
-    width: 100%;
-    font-size: 3em;
-  }
-}
 @media (max-width: 768px) {
   .home p {
     margin: 50px 0;
+  }
+}
+@media (max-width: 992px) {
+  .home p {
+    margin: 30px 0;
+    width: 90%;
+    font-size: 3em;
   }
 }
 .home button {
@@ -127,9 +127,14 @@ h4 {
   position: absolute;
   bottom: 60px;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 768px) {
   .home i.up_down {
-    bottom: 18px;
+    bottom: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .home i.up_down {
+    bottom: 28px;
   }
 }
 @keyframes up_down {
