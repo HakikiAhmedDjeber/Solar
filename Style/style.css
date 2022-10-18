@@ -57,7 +57,41 @@ h4 {
 }
 /* end global rules */
 /* start components */
-
+.heading_title {
+  text-align: center;
+  margin: 20px 0 70px;
+}
+.heading_title > h4 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--blue-color);
+  margin-bottom: 15px;
+}
+.heading_title > p {
+  position: relative;
+  color: var(--dark-blue-font);
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+.heading_title > p::after {
+  width: 10%;
+  bottom: -20px;
+}
+.heading_title > p::before {
+  bottom: -15px;
+  width: 15%;
+}
+.heading_title > p::before,
+.heading_title > p::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background: var(--blue-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* end components */
 /* start Home */
 .home {
@@ -116,7 +150,7 @@ h4 {
 }
 .home button {
   height: 50px;
-  width: 25%;
+  width: 20%;
 }
 @media (max-width: 768px) {
   .home button {
@@ -190,7 +224,7 @@ h4 {
 /* start about */
 .about {
   background: #fff;
-  margin: 80px 0;
+  margin: 100px 0;
 }
 .about .container {
   display: flex;
@@ -205,9 +239,10 @@ h4 {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--blue-color);
+  letter-spacing: 1.5px;
 }
 .about img {
-  width: 42%;
+  width: 40%;
 }
 @media (max-width: 992px) {
   .about img {
@@ -226,7 +261,7 @@ h4 {
   }
 }
 .about h2 {
-  font-size: 50px;
+  font-size: 55px;
   color: var(--dark-blue);
 }
 .about h2 span {
@@ -250,3 +285,73 @@ h4 {
   filter: opacity(0.9);
 }
 /* end about */
+/* start services */
+.services {
+  margin: 50px 0;
+}
+.services .container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services .box {
+  position: relative;
+  min-width: 250px;
+  overflow: hidden;
+  flex: 1;
+  background: var(--light-blue);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .services .box {
+  min-width: fit-content;
+  }
+}
+@media (max-width: 992px) {
+  .services .box {
+    max-width: 50%;
+  }
+}
+.services .box img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+.services .box h3 {
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  background-color: var(--light-blue);
+  color: var(--dark-blue-font);
+  font-size: 1.5em;
+  z-index: 2;
+}
+.services .box .plus {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-color);
+  transform: translate(-50%, -65%);
+  border: 2px solid white;
+  transition: 0.5s;
+}
+.services .box .plus:hover {
+  border: var(--dark-blue);
+  background-color: var(--dark-blue);
+}
+.services .box:hover .plus {
+  display: flex;
+}
+.services .box:hover img {
+  transform: scale(1.2);
+}
+.services .box .plus i {
+  font-size: 25px;
+  color: white;
+}
+/* end services */
