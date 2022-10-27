@@ -387,21 +387,21 @@ h4 {
   position: relative;
   z-index: 2;
 }
-.project .container .swipe {
+.swipe {
   display: flex;
   justify-content: center;
   margin: 0 0 40px;
   gap: 30px;
 }
-.project .container .swipe .left,
-.project .container .swipe .right {
+.swipe .left,
+.swipe .right {
   background: white;
   padding: 20px 25px;
   cursor: pointer;
   border-radius: 2px;
 }
-.project .container .swipe .left i,
-.project .container .swipe .right i {
+.swipe .left i,
+.swipe .right i {
   font-size: 20px;
   color: var(--blue-color);
 }
@@ -592,3 +592,43 @@ h4 {
   display: block;
 }
 /* end FAQS */
+/* start testmonial */
+.testmonial {
+  margin: 80px 0;
+}
+.testmonial .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.testmonial .container .swipe div {
+  background: var(--blue-color);
+}
+.testmonial .container .swipe div i {
+  color: white;
+}
+.testmonial .container .slider {
+  max-width: 80%;
+}
+.testmonial .slider .client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.testmonial .slider .client p {
+  margin: 30px 0 20px;
+  line-height: 1.5;
+  font-size: 1.5em;
+  color: #777;
+}
+.testmonial .slider .client h4 {
+  color: var(--dark-blue);
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+.testmonial .slider .client span {
+  color: #777;
+}
+/* end testmonial */
