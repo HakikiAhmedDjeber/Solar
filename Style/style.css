@@ -72,7 +72,7 @@ h4 {
 }
 .heading_title > p {
   position: relative;
-  color: var(--dark-blue-font);
+  color: var(--dark-blue);
   font-size: 3em;
   font-weight: bold;
   font-family: "Roboto";
@@ -679,3 +679,147 @@ h4 {
   resize: vertical;
 }
 /* end contact */
+/* start footer */
+footer {
+  position: relative;
+  background: var(--dark-blue);
+  padding: 30px 0;
+}
+footer h4 {
+  color: var(--blue-color);
+  font-size: 1.2em;
+  letter-spacing: 3.5px;
+  margin-bottom: 10px;
+}
+footer .contact-info {
+  background: #2d4b7c;
+  margin: 40px 0 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  footer .contact-info {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+footer .contact-info p {
+  color: white;
+  font-size: 1.05em;
+}
+footer .info {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  footer .info {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  footer .info .descrip {
+    min-width: 350px;
+    flex: 1;
+  }
+  footer .info .products {
+    min-width: 250px;
+    flex: 1;
+  }
+  footer .info .newsletter {
+    min-width: 500px;
+    flex: 1;
+  }
+}
+@media (max-width: 768px) {
+  footer .info {
+    flex-direction: column;
+  }
+  footer .info .newsletter {
+    min-width: 100%;
+  }
+}
+footer .info .descrip {
+  width: 40%;
+}
+footer .info .descrip p {
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+footer .info .descrip ul {
+  display: flex;
+  gap: 15px;
+}
+footer .info .descrip ul i {
+  color: white;
+  font-size: 1.3em;
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+footer .info .descrip ul i:hover {
+  color: #2d4b7c;
+  background-color: white;
+}
+footer .info .products {
+  width: 25%;
+}
+footer .info .products li {
+  margin-bottom: 10px;
+}
+footer .info .products a {
+  color: white;
+}
+footer .info .products a i {
+  margin-right: 6px;
+}
+footer .info .newsletter {
+  width: 50%;
+}
+footer .info .newsletter p {
+  color: white;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+footer .info .newsletter .email {
+  display: flex;
+}
+footer .info .newsletter input[type="email"] {
+  padding: 15px;
+  width: 75%;
+  border: none;
+}
+footer .info .newsletter input[type="email"]:focus {
+  outline: 2.5px solid #009cff70;
+}
+footer .info .newsletter button {
+  width: 25%;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: var(--blue-color);
+}
+footer hr {
+  width: 99%;
+  left: 4px;
+  position: absolute;
+  border: none;
+  background: #77777740;
+  height: 2px;
+}
+footer .theend {
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+footer .theend a {
+  color: white;
+}
+/* end footer */
