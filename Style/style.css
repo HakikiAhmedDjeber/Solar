@@ -818,8 +818,9 @@ footer .theend {
   padding-top: 30px;
   text-align: center;
   letter-spacing: 1.2px;
+  color: white;
 }
 footer .theend a {
-  color: white;
+  color: var(--blue-color);
 }
 /* end footer */
